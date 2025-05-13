@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Contact Form</title>
+  </head>
+  <body>
+    <section>
+      <form action="#" method="POST" aria-labelledby="form-title" role="form">
+        <h2 id="form-title">Contact Us</h2>
+
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" aria-required="true" />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" aria-required="true" />
+        </div>
+
+        <div>
+          <button type="submit" aria-label="Submit the form">Submit</button>
+        </div>
+
+        <div aria-live="polite" role="alert"></div>
+      </form>
+    </section>
+  </body>
+</html>
