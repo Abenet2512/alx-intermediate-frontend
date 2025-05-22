@@ -1,0 +1,12 @@
+@mixin lr-margin($margin) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+body {
+  @include lr-margin(10px);
+}
+
+div {
+  @include lr-margin(15px);
+}
